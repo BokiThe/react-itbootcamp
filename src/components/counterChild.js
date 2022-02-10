@@ -8,7 +8,9 @@ class ChildCounter extends Component {
         <button onClick={() => this.props.onIncrement(this.props.counter.id)}>
           +
         </button>
-        <button>Delete</button>
+        <button onClick={() => this.props.onDelete(this.props.counter.id)}>
+          Delete
+        </button>
       </div>
     );
   }
